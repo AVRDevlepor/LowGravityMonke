@@ -50,7 +50,7 @@ namespace HereAreMod
                 {
                     GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().AddForce(new Vector3(0f, 5.2f, 0f), ForceMode.Acceleration);
                 }
-                    // Low gravity YAAAAAAY
+                    // Low gravity YAAAAAAY (note that when ur using this in your own mod, if gravity goes above 6.4 gravity flips)
 
             }
         }
