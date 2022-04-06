@@ -1,5 +1,6 @@
 using BepInEx;
 using System;
+using System.ComponentModel;
 using UnityEngine;
 using Utilla;
 
@@ -11,6 +12,7 @@ namespace HereAreMod
 
     /* This attribute tells Utilla to look for [ModdedGameJoin] and [ModdedGameLeave] */
     [ModdedGamemode]
+    [Description("HauntedModMenu")]
     [BepInDependency("org.legoandmars.gorillatag.utilla", "1.5.0")]
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class Plugin : BaseUnityPlugin
@@ -50,7 +52,7 @@ namespace HereAreMod
                 {
                     GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().AddForce(new Vector3(0f, 5.2f, 0f), ForceMode.Acceleration);
                 }
-                    // Low gravity YAAAAAAY (note that when ur using this in your own mod, if gravity goes above 6.4 gravity flips)
+                    // Low gravity YAAAAAAY
 
             }
         }
